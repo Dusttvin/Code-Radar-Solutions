@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 int countLeadingZeros(unsigned int number) {
-    return number == 0 ? 32 : __builtin_clz(number);
+    if (number == 0) return 32;
+    int count = 0;
+    while ((number & 0x80000000) == 0) {
+        count++;
+        number <<= 1;
+    }
+    return count;
 }
 
 int main() {
     unsigned int number;
-    printf("Enter a number: ");
     scanf("%u", &number);
-    printf("Number of leading zeros: %d\n", countLeadingZeros(number));
+    printf("%d\n", countLeadingZeros(number));
     return 0;
 }
