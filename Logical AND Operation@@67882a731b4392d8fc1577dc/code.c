@@ -3,11 +3,9 @@
 int main() {
   int num1, num2;
 
-  // Input two integers
   scanf("%d %d", &num1, &num2);
 
-  // Check if both numbers are greater than or equal to 5
-  if (num1 >= 5 && num2 >= 5) {
+  if (num1 > 0 && num2 > 0) {
     printf("True\n");
   } else {
     printf("False\n");
