@@ -4,10 +4,10 @@ int main() {
     char name[50], hobby[50];
     int age;
 
-    // Taking inputs
+    // Reading inputs directly in one go
     scanf("%s %d %s", name, &age, hobby);
 
-    // Printing the details
+    // Printing the output
     printf("Name: %s\n", name);
     printf("Age: %d\n", age);
     printf("Hobby: %s\n", hobby);
