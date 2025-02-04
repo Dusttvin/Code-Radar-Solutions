@@ -3,6 +3,9 @@
 int main() {
     int num1, num2;
 
+    // Prompt the user for input
+    printf("Enter two space-separated integers: ");
+    
     // Read two space-separated integers
     scanf("%d %d", &num1, &num2);
 
