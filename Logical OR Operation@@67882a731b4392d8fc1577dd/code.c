@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 int main() {
-  int num1 = 10, num2 = 20, num3 = 30;
+    int num1, num2;
 
-  // Check if num1 is greater than 15 or num2 is less than 25.
-  if (num1 > 15 || num2 < 25) {
-    printf("At least one condition is true.\n");
-  } else {
-    printf("Both conditions are false.\n");
-  }
+    // Input the two numbers
+    printf("Enter two space-separated integers: ");
+    scanf("%d %d", &num1, &num2);
 
-  // Check if num1 is equal to num2 or num3 is equal to num1.
-  if (num1 == num2 || num3 == num1) {
-    printf("At least one condition is true.\n");
-  } else {
-    printf("Both conditions are false.\n");
-  }
+    // Check if at least one number is greater than zero
+    if (num1 > 0 || num2 > 0) {
+        printf("True\n");
+    } else {
+        printf("False\n");
+    }
 
-  return 0;
+    return 0;
 }
