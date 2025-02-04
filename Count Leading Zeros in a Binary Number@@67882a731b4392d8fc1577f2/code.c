@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int countLeadingZeros(unsigned int number) {
+    if (number == 0) return 32;
     int count = 0;
-    for (int i = 31; i >= 0; i--) {
-        if ((number & (1 << i)) == 0) {
-            count++;
-        } else {
-            break;
-        }
+    while ((number & 0x80000000) == 0) {
+        count++;
+        number <<= 1;
     }
     return count;
 }
@@ -17,3 +15,4 @@ int main() {
     printf("Number of leading zeros: %d\n", countLeadingZeros(number));
     return 0;
 }
+
