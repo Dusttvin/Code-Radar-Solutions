@@ -13,12 +13,8 @@ int countLeadingZeros(unsigned int n) {
 }
 
 int main() {
-    unsigned int n = 1; // Test case 1
+    unsigned int n;
+    scanf("%u", &n);
     printf("%d\n", countLeadingZeros(n));
-
-    n = 2; // Test case 2
-    printf("%d\n", countLeadingZeros(n));
-
-    // Add more test cases here as needed
     return 0;
 }
