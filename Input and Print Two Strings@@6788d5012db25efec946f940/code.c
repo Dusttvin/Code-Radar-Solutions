@@ -4,7 +4,10 @@ int main() {
     int num;
 
     // Read an integer from the user
-    scanf("%d", &num);
+    if (scanf("%d", &num) != 1) {
+        printf("Invalid input. Please enter an integer.\n");
+        return 1; // Exit the program with an error code
+    }
 
     // Print the hexadecimal and octal representations
     printf("Hexadecimal: %X\n", num);
