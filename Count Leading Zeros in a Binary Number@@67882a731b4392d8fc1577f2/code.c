@@ -1,18 +1,24 @@
 #include <stdio.h>
 
-int countLeadingZeros(unsigned int number) {
-    if (number == 0) return 32;
+int countLeadingZeros(unsigned int n) {
     int count = 0;
-    while ((number & 0x80000000) == 0) {
+    // Assuming 32-bit integer
+    for (int i = 31; i >= 0; i--) {
+        if ((n >> i) & 1) {
+            break;
+        }
         count++;
-        number <<= 1;
     }
     return count;
 }
 
 int main() {
-    unsigned int number;
-    scanf("%u", &number);
-    printf("%d\n", countLeadingZeros(number));
+    unsigned int n = 1; // Test case 1
+    printf("%d\n", countLeadingZeros(n));
+
+    n = 2; // Test case 2
+    printf("%d\n", countLeadingZeros(n));
+
+    // Add more test cases here as needed
     return 0;
 }
