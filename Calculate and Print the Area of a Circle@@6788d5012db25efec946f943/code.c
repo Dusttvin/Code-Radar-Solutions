@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    char name[50], hobby[50];
-    int age;
+    float radius, area;
 
-    // Reading inputs directly in one go
-    scanf("%s %d %s", name, &age, hobby);
+    // Reading radius input
+    scanf("%f", &radius);
+
+    // Calculating the area of the circle
+    area = 3.14 * radius * radius;
 
     // Printing the output
-    printf("Name: %s\n", name);
-    printf("Age: %d\n", age);
-    printf("Hobby: %s\n", hobby);
+    printf("Area: %.2f\n", area);
 
     return 0;
 }
+
