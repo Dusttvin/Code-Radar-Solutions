@@ -1,31 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
+  int num1, num2;
 
-    // Input two space-separated integers
-    scanf("%d %d", &num1, &num2);
+  scanf("%d %d", &num1, &num2);
 
-    // Check if num1 is greater than or equal to num2
-    if (num1 >= num2) {
-        printf("True\n");
-    } else {
-        printf("False\n");
-    }
+  if (num1 <= num2) {
+    printf("True");
+  } else {
+    printf("False");
+  }
 
-    // Check if num1 is equal to num2
-    if (num1 == num2) {
-        printf("True\n");
-    } else {
-        printf("False\n");
-    }
-
-    // Check if num1 is less than or equal to num2
-    if (num1 <= num2) {
-        printf("True\n");
-    } else {
-        printf("False\n");
-    }
-
-    return 0;
+  return 0;
 }
