@@ -1,10 +1,12 @@
 #include <stdio.h>
-
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
-int main() {
-    printf("%s", welcome());
+int main() { 
+    int num;
+    scanf("%d", &num);
+    if (num>0)
+    printf("Positive\n");
+    else if (num<0)
+    printf("Negative\n");
+    else
+    printf("Zeri\n");
     return 0;
 }
