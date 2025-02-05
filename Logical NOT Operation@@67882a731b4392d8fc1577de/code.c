@@ -1,18 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int number;
+    int num;
+    scanf("%d", &num); // Read the input integer
 
-    // Read an integer from the user
-    printf("Enter an integer: ");
-    scanf("%d", &number);
-
-    // Check if the number is not greater than zero
-    if (number <= 0) {
+    // Check if the number is not greater than zero using the ! operator
+    if (!(num > 0)) {
         printf("True\n");
     } else {
         printf("False\n");
     }
 
     return 0;
-}  
+}
