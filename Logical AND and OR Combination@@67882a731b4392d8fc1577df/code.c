@@ -2,13 +2,14 @@
 
 int main() {
     int num1, num2;
-    scanf("%d %d", &num1, &num2);
-    
+    scanf("%d %d", &num1, &num2); // Read the input integers
+
+    // Check the condition using the && and || operators
     if ((num1 > 0 && num2 < 0) || (num1 == 0 && num2 == 0)) {
         printf("True\n");
     } else {
         printf("False\n");
     }
-    
+
     return 0;
 }
